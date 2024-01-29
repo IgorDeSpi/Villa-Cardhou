@@ -1,0 +1,43 @@
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #333;
+	display: flex;
+	justify-content: space-around;
+	padding: 14px 0;
+	width: 100%;
+	/* margin: 0; */
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	background-color: lightgray;
+	font-family: 'Source code pro', Calibri, serif;
+}
+
+nav a {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+main {
+	padding-top: 60px;
+}
+
+.essaouira {
+	background-image: url(../img/essaouira.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 60%;
+}
