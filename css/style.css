@@ -10,15 +10,6 @@ nav {
 	/* margin: 0; */
 }
 
-body {
-	margin: 0;
-	min-height: 100vh;
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-	background-color: lightgray;
-	font-family: 'Source code pro', Calibri, serif;
-}
-
 nav a {
 	color: white;
 	text-align: center;
@@ -31,13 +22,74 @@ nav a:hover {
 	color: black;
 }
 
+body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.villa {
+	width: 300px;
+	padding: 20px;
+	border: 1px solide #ccc;
+	margin: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.villa img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.villa h2 {
+	margin: 10px 0;
+}
+
+.villa p {
+	margin: 10px 0;
+}
+
+.villa button {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.villa button:hover {
+	background-color: #0056b3;
+}
+
 main {
 	padding-top: 60px;
 }
 
-.essaouira {
+/* body {
+	margin: 0;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	background-color: lightgray;
+	font-family: 'Source code pro', Calibri, serif;
+} */
+
+
+
+/* .essaouira {
 	background-image: url(../img/essaouira.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 60%;
-}
+	background-size: cover; */
+	/* background-position: center; */
+	/* height: 40%;
+	display: flex;
+} */
+
+/* .texts {
+	display: flex;
+	flex-direction: column;
+} */
