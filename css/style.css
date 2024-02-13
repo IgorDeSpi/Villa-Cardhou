@@ -1,29 +1,70 @@
-nav {
+/* nav {
 	position: fixed;
 	top: 0;
 	left: 0;
 	background-color: #333;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	padding: 14px 0;
 	width: 100%;
-	/* margin: 0; */
+} */
+/************************** NAVBAR **************************/
+.navbar-burger span {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 2rem;
+	height: 0.25rem;
+	/* background-color: #333; */
+	border-radius: 1rem;
+	opacity: 1;
+	transform: rotate(0deg) translate(0, 0);
+	transition: all 0.3s ease;
 }
-
-nav a {
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+.navbar-burger span:nth-child(1) {
+	top: 0.7rem;
 }
-
-nav a:hover {
-	background-color: #ddd;
-	color: black;
+.navbar-burger span:nth-child(2), .navbar-burger span:nth-child(3) {
+	top: 1.5rem;
 }
-
+.navbar-burger span:nth-child(4) {
+	top: 2.3rem;
+}
+.navbar-burger.is-active span:nth-child(1) {
+	transform: rotate(45deg) translate(0.7rem, -0.7rem);
+}
+.navbar-burger.is-active span:nth-child(2) {
+	opacity: 0;
+}
+.navbar-burger.is-active span:nth-child(3) {
+	transform: rotate(45deg) translate(0.7rem, 0.7rem);
+}
+.navbar-burger.is-active span:nth-child(4) {
+	transform: translate(0, -1px);
+}
+.button.navbar-burger {
+	background-color: #363636 !important;
+	border: none;
+}
+.button.navbar-burger:hover {
+	background-color: #ddd !important;
+	color: black !important;
+}
+.navbar-item:hover {
+	background-color: #ddd !important;
+	color: black !important;
+}
+.navbar-item:hover .button {
+	background-color: #ddd !important;
+	color: black !important;
+}
+/************************** BODY **************************/
 body {
 	font-family: Arial, sans-serif;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .container {
@@ -35,7 +76,7 @@ body {
 .villa {
 	width: 300px;
 	padding: 20px;
-	border: 1px solide #ccc;
+	border: 1px solid #ccc;
 	margin: 10px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -65,9 +106,14 @@ body {
 .villa button:hover {
 	background-color: #0056b3;
 }
-
+/************************** MAIN **************************/
 main {
 	padding-top: 60px;
+}
+
+/************************** FOOTER **************************/
+footer {
+	margin-top: auto;
 }
 
 /* body {

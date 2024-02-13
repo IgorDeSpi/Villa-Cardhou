@@ -7,16 +7,38 @@
 	<meta name="author" content="Villa Cardhou">
 	<title>Villa Cardhou</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@bulma/icons@6.0.0/css/bulma-icons.min.css">
 </head>
 <body>
 	<header>
-		<nav>
-			<a href="#">Accueil</a>
-			<a href="#FIRST">First information</a>
-			<a href="#SECOND">Second information</a>
-			<a href="#THIRD">Third information</a>
-			<a href="#FOURTH">Fourth information</a>
+		<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a href="#" class="navbar-item">
+					<img src="logo-white.png" alt="Logo">
+				</a>
+				<button class="button navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</button>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start">
+					<!-- <a class="navbar-item" href="#">Home</a> -->
+					<a class="navbar-item" href="#FIRST">About us</a>
+					<a class="navbar-item" href="#SECOND">Essaouira</a>
+					<a class="navbar-item" href="#THIRD">GALLERY</a>
+					<a class="navbar-item" href="#FOURTH">Contact</a>
+				</div>
+				<div class="navbar-end">
+					<!-- <span class="icon is-small">
+						<i class="fas fa-calendar-alt"></i>
+					</span> -->
+					<a class="navbar-item" href="#">RESERVE</a>
+				</div>
+			</div>
 		</nav>
 	</header>
 	<main>
@@ -88,8 +110,14 @@
 			</div>
 		</div> -->
 	</main>
-	<footer>
-
-	</footer>
+	<footer id="sticky-footer">
+		<div class="top_footer">
+			<p>Footer content goes here...</p>
+		</div>
+		<div class="copyright_footer">
+			<p>Copyright</p>
+		</div>
+    </footer>
+	<script src="./js/script.js"></script>
 </body>
 </html>
