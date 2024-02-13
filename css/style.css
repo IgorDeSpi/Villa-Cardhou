@@ -59,6 +59,15 @@
 	background-color: #ddd !important;
 	color: black !important;
 }
+.logo {
+	height: 28px;
+	transition: all 0.3s ease-in-out;
+}
+.navbar-item:hover .logo {
+	filter: brightness(1) invert(1);
+}
+
+
 /************************** BODY **************************/
 body {
 	font-family: Arial, sans-serif;
