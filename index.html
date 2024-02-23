@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> <!-- Bulma -->
     <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
 	<link rel="icon" href="./img/logo-rounded.ico" type="image/png" />
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.10/main.min.css' rel='stylesheet' />
 </head>
 <body>
 	<header>
@@ -24,7 +25,6 @@
 					<span aria-hidden="true"></span>
 				</button>
 			</div>
-
 			<div id="navbarBasicExample" class="navbar-menu">
 				<div class="navbar-start">
 					<!-- <a class="navbar-item" href="#">Home</a> -->
@@ -38,7 +38,7 @@
 					</a>
 					<a class="navbar-item" href="#THIRD">
 						<span class="icon is-small"><i class="fa-regular fa-image"></i></span>
-						<span>GALLERY</span>
+						<span>Gallery</span>
 					</a>
 					<a class="navbar-item" href="#FOURTH">
 						<span class="icon is-small"><i class="fa-solid fa-address-book"></i></span>
@@ -46,16 +46,16 @@
 					</a>
 				</div>
 				<div class="navbar-end">
-					<a class="navbar-item" href="#">
+					<a class="navbar-item" href="./calendrier.html">
 						<span class="icon is-small"><i class="fas fa-calendar-alt"></i></span>
-						<span>Reservation</span>
+						<span>Disponibilités</span>
 					</a>
 				</div>
 			</div>
 		</nav>
 	</header>
 	<main>
-		<div class="essaouira">
+		<!-- <div class="essaouira">
 			<h1>Villa Cardhou</h1>
 			<div class="container">
 				<div class="villa">
@@ -71,57 +71,10 @@
 					<button onclick="reserveVilla(2)">Reserve</button>
 				</div>
 			</div>
-		</div>
-		<!-- <div class="texts">
-			<div id="FIRST">
-				<h1>FIRST INFORMATION</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate urna vel lectus placerat lobortis. Nunc sit amet urna placerat, volutpat tellus eu, efficitur tortor. Praesent quis neque auctor, lacinia elit ac, ultrices dolor. Morbi non eleifend libero, vitae lobortis dui. Duis dignissim diam suscipit turpis vestibulum, non feugiat urna imperdiet. Aliquam venenatis purus non rhoncus consectetur. Aenean nisi lorem, pretium non placerat non, ultrices ut tortor.
-
-					Nunc porta augue a enim facilisis, nec varius risus posuere. Duis auctor tristique vulputate. Nulla feugiat malesuada ligula a auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed interdum metus a cursus sagittis. Nulla non nisl nisl. Nunc cursus a lorem eget placerat.
-
-					Integer sollicitudin convallis vehicula. Cras id ultricies nibh. Sed elementum rhoncus velit, id lobortis sem tincidunt et. Aenean sem arcu, hendrerit ut ipsum a, tincidunt viverra velit. Quisque a nulla et augue tincidunt ornare. Pellentesque faucibus massa in arcu feugiat dapibus et a erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lectus elit, mattis in hendrerit eget, pharetra eget tellus. Integer hendrerit hendrerit libero, non mollis metus mollis ut.
-
-					Sed vestibulum elit id turpis rhoncus, in vulputate nulla aliquam. Fusce aliquam elit vitae ipsum sagittis, et feugiat neque hendrerit. Duis tristique urna eget fringilla hendrerit. Vestibulum imperdiet nulla et dignissim consectetur. Suspendisse id lectus et lorem fringilla consequat. Donec dictum massa a nulla tincidunt, non convallis justo imperdiet. Morbi vitae vulputate dolor, eget scelerisque libero. Ut et arcu ut velit finibus rutrum ut dignissim mi. Ut fermentum elit id diam posuere, et blandit quam pharetra. Sed iaculis, magna ac mattis suscipit, quam nibh pretium turpis, sed suscipit ex neque et turpis. Nulla vitae consequat augue, eu cursus mi. Aliquam blandit nunc sed metus consectetur eleifend. Mauris feugiat dolor sem, sed molestie arcu interdum vel.
-
-					Nam a pretium diam. Nullam scelerisque convallis justo, sit amet consectetur felis mollis nec. Mauris molestie accumsan urna, eu ultricies leo congue imperdiet. Nunc euismod massa elit, vitae mollis risus maximus ut. Etiam eget lectus metus. Nunc quis ex at risus finibus faucibus. In vitae nibh ac lorem suscipit interdum et quis lacus. Phasellus non mauris ac risus pulvinar imperdiet sit amet ut sapien. Proin quis gravida ipsum. Sed quis tellus luctus, tristique nisi et, molestie velit. Donec egestas orci et lectus tincidunt rutrum. Donec mollis quam sit amet odio placerat bibendum.</p>
-			</div>
-			<div id="SECOND">
-				<h1>SECOND INFORMATION</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate urna vel lectus placerat lobortis. Nunc sit amet urna placerat, volutpat tellus eu, efficitur tortor. Praesent quis neque auctor, lacinia elit ac, ultrices dolor. Morbi non eleifend libero, vitae lobortis dui. Duis dignissim diam suscipit turpis vestibulum, non feugiat urna imperdiet. Aliquam venenatis purus non rhoncus consectetur. Aenean nisi lorem, pretium non placerat non, ultrices ut tortor.
-
-					Nunc porta augue a enim facilisis, nec varius risus posuere. Duis auctor tristique vulputate. Nulla feugiat malesuada ligula a auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed interdum metus a cursus sagittis. Nulla non nisl nisl. Nunc cursus a lorem eget placerat.
-
-					Integer sollicitudin convallis vehicula. Cras id ultricies nibh. Sed elementum rhoncus velit, id lobortis sem tincidunt et. Aenean sem arcu, hendrerit ut ipsum a, tincidunt viverra velit. Quisque a nulla et augue tincidunt ornare. Pellentesque faucibus massa in arcu feugiat dapibus et a erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lectus elit, mattis in hendrerit eget, pharetra eget tellus. Integer hendrerit hendrerit libero, non mollis metus mollis ut.
-
-					Sed vestibulum elit id turpis rhoncus, in vulputate nulla aliquam. Fusce aliquam elit vitae ipsum sagittis, et feugiat neque hendrerit. Duis tristique urna eget fringilla hendrerit. Vestibulum imperdiet nulla et dignissim consectetur. Suspendisse id lectus et lorem fringilla consequat. Donec dictum massa a nulla tincidunt, non convallis justo imperdiet. Morbi vitae vulputate dolor, eget scelerisque libero. Ut et arcu ut velit finibus rutrum ut dignissim mi. Ut fermentum elit id diam posuere, et blandit quam pharetra. Sed iaculis, magna ac mattis suscipit, quam nibh pretium turpis, sed suscipit ex neque et turpis. Nulla vitae consequat augue, eu cursus mi. Aliquam blandit nunc sed metus consectetur eleifend. Mauris feugiat dolor sem, sed molestie arcu interdum vel.
-
-					Nam a pretium diam. Nullam scelerisque convallis justo, sit amet consectetur felis mollis nec. Mauris molestie accumsan urna, eu ultricies leo congue imperdiet. Nunc euismod massa elit, vitae mollis risus maximus ut. Etiam eget lectus metus. Nunc quis ex at risus finibus faucibus. In vitae nibh ac lorem suscipit interdum et quis lacus. Phasellus non mauris ac risus pulvinar imperdiet sit amet ut sapien. Proin quis gravida ipsum. Sed quis tellus luctus, tristique nisi et, molestie velit. Donec egestas orci et lectus tincidunt rutrum. Donec mollis quam sit amet odio placerat bibendum.</p>
-			</div>
-			<div id="THIRD">
-				<h1>THIRD INFORMATION</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate urna vel lectus placerat lobortis. Nunc sit amet urna placerat, volutpat tellus eu, efficitur tortor. Praesent quis neque auctor, lacinia elit ac, ultrices dolor. Morbi non eleifend libero, vitae lobortis dui. Duis dignissim diam suscipit turpis vestibulum, non feugiat urna imperdiet. Aliquam venenatis purus non rhoncus consectetur. Aenean nisi lorem, pretium non placerat non, ultrices ut tortor.
-
-					Nunc porta augue a enim facilisis, nec varius risus posuere. Duis auctor tristique vulputate. Nulla feugiat malesuada ligula a auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed interdum metus a cursus sagittis. Nulla non nisl nisl. Nunc cursus a lorem eget placerat.
-
-					Integer sollicitudin convallis vehicula. Cras id ultricies nibh. Sed elementum rhoncus velit, id lobortis sem tincidunt et. Aenean sem arcu, hendrerit ut ipsum a, tincidunt viverra velit. Quisque a nulla et augue tincidunt ornare. Pellentesque faucibus massa in arcu feugiat dapibus et a erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lectus elit, mattis in hendrerit eget, pharetra eget tellus. Integer hendrerit hendrerit libero, non mollis metus mollis ut.
-
-					Sed vestibulum elit id turpis rhoncus, in vulputate nulla aliquam. Fusce aliquam elit vitae ipsum sagittis, et feugiat neque hendrerit. Duis tristique urna eget fringilla hendrerit. Vestibulum imperdiet nulla et dignissim consectetur. Suspendisse id lectus et lorem fringilla consequat. Donec dictum massa a nulla tincidunt, non convallis justo imperdiet. Morbi vitae vulputate dolor, eget scelerisque libero. Ut et arcu ut velit finibus rutrum ut dignissim mi. Ut fermentum elit id diam posuere, et blandit quam pharetra. Sed iaculis, magna ac mattis suscipit, quam nibh pretium turpis, sed suscipit ex neque et turpis. Nulla vitae consequat augue, eu cursus mi. Aliquam blandit nunc sed metus consectetur eleifend. Mauris feugiat dolor sem, sed molestie arcu interdum vel.
-
-					Nam a pretium diam. Nullam scelerisque convallis justo, sit amet consectetur felis mollis nec. Mauris molestie accumsan urna, eu ultricies leo congue imperdiet. Nunc euismod massa elit, vitae mollis risus maximus ut. Etiam eget lectus metus. Nunc quis ex at risus finibus faucibus. In vitae nibh ac lorem suscipit interdum et quis lacus. Phasellus non mauris ac risus pulvinar imperdiet sit amet ut sapien. Proin quis gravida ipsum. Sed quis tellus luctus, tristique nisi et, molestie velit. Donec egestas orci et lectus tincidunt rutrum. Donec mollis quam sit amet odio placerat bibendum.</p>
-			</div>
-			<div id="FOURTH">
-				<h1>FOURTH INFORMATION</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate urna vel lectus placerat lobortis. Nunc sit amet urna placerat, volutpat tellus eu, efficitur tortor. Praesent quis neque auctor, lacinia elit ac, ultrices dolor. Morbi non eleifend libero, vitae lobortis dui. Duis dignissim diam suscipit turpis vestibulum, non feugiat urna imperdiet. Aliquam venenatis purus non rhoncus consectetur. Aenean nisi lorem, pretium non placerat non, ultrices ut tortor.
-
-					Nunc porta augue a enim facilisis, nec varius risus posuere. Duis auctor tristique vulputate. Nulla feugiat malesuada ligula a auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed interdum metus a cursus sagittis. Nulla non nisl nisl. Nunc cursus a lorem eget placerat.
-
-					Integer sollicitudin convallis vehicula. Cras id ultricies nibh. Sed elementum rhoncus velit, id lobortis sem tincidunt et. Aenean sem arcu, hendrerit ut ipsum a, tincidunt viverra velit. Quisque a nulla et augue tincidunt ornare. Pellentesque faucibus massa in arcu feugiat dapibus et a erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lectus elit, mattis in hendrerit eget, pharetra eget tellus. Integer hendrerit hendrerit libero, non mollis metus mollis ut.
-
-					Sed vestibulum elit id turpis rhoncus, in vulputate nulla aliquam. Fusce aliquam elit vitae ipsum sagittis, et feugiat neque hendrerit. Duis tristique urna eget fringilla hendrerit. Vestibulum imperdiet nulla et dignissim consectetur. Suspendisse id lectus et lorem fringilla consequat. Donec dictum massa a nulla tincidunt, non convallis justo imperdiet. Morbi vitae vulputate dolor, eget scelerisque libero. Ut et arcu ut velit finibus rutrum ut dignissim mi. Ut fermentum elit id diam posuere, et blandit quam pharetra. Sed iaculis, magna ac mattis suscipit, quam nibh pretium turpis, sed suscipit ex neque et turpis. Nulla vitae consequat augue, eu cursus mi. Aliquam blandit nunc sed metus consectetur eleifend. Mauris feugiat dolor sem, sed molestie arcu interdum vel.
-
-					Nam a pretium diam. Nullam scelerisque convallis justo, sit amet consectetur felis mollis nec. Mauris molestie accumsan urna, eu ultricies leo congue imperdiet. Nunc euismod massa elit, vitae mollis risus maximus ut. Etiam eget lectus metus. Nunc quis ex at risus finibus faucibus. In vitae nibh ac lorem suscipit interdum et quis lacus. Phasellus non mauris ac risus pulvinar imperdiet sit amet ut sapien. Proin quis gravida ipsum. Sed quis tellus luctus, tristique nisi et, molestie velit. Donec egestas orci et lectus tincidunt rutrum. Donec mollis quam sit amet odio placerat bibendum.</p>
-			</div>
 		</div> -->
+
+		<!-- <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FBrussels&bgcolor=%23ffffff&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&hl=fr&src=bHM5ZHVpNWtuYnZnMWk4ajVjaGFvN3QzYThnNGhlNXRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23D50000" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+		<!-- <div class="airbnb-embed-frame" data-id="930212872241751404" data-view="home" data-hide-price="true" data-hide-reviews="true" style="width: 450px; height: 300px; margin: auto;"><a href="https://fr.airbnb.be/rooms/930212872241751404?check_in=2024-02-20&amp;check_out=2024-02-25&amp;guests=1&amp;adults=5&amp;s=66&amp;source=embed_widget" rel="nofollow">Voir sur Airbnb</a><a href="https://fr.airbnb.be/rooms/930212872241751404?check_in=2024-02-20&amp;check_out=2024-02-25&amp;guests=1&amp;adults=5&amp;s=66&amp;source=embed_widget" rel="nofollow">Hébergement · Essaouira · ★5,0 · 4 chambres · 7 lits · 3&nbsp;salles de bain et 1&nbsp;toilette</a><script async="" src="https://fr.airbnb.be/embeddable/airbnb_jssdk"></script></div> -->
 	</main>
 	<footer id="sticky-footer" class="footer has-background-grey-light">
 		<div class="top_footer has-text-centered">
@@ -129,7 +82,7 @@
 		</div>
 		<div class="copyright_footer has-text-centered">
 			<p>
-				<strong>Copyright &copy; 2024</strong> <a href="#">Villa Cardhou</a>. All right Reserved.
+				<strong>Copyright &copy; 2024</strong> <a href="#">Villa Cardhou</a>. All Rights Reserved.
 			</p>
 		</div>
     </footer>

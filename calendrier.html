@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Essaouira, Maroc, activités, événements, lieux à découvrir, guide touristique" />
+  <meta name="author" content="Villa Cardhou" />
+  <title>Villa Cardhou</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> -->
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Bulma -->
+  <link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet" />
+  <link rel="icon" href="./img/logo-rounded.ico" type="image/png" />
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.10/main.min.css" rel="stylesheet"/> -->
+</head>
+
+<body>>
+  <header>
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="./index.html" class="navbar-item">
+          <img class="logo" src="logo-white.png" alt="Logo" />
+        </a>
+        <button class="button navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <!-- <a class="navbar-item" href="#">Home</a> -->
+          <a class="navbar-item" href="#FIRST">
+            <span class="icon is-small"><i class="fa-solid fa-circle-info"></i></span>
+            <span>About us</span>
+          </a>
+          <a class="navbar-item" href="#SECOND">
+            <span class="icon is-small"><i class="fa-solid fa-suitcase"></i></span>
+            <span>Essaouira</span>
+          </a>
+          <a class="navbar-item" href="#THIRD">
+            <span class="icon is-small"><i class="fa-regular fa-image"></i></span>
+            <span>Gallery</span>
+          </a>
+          <a class="navbar-item" href="./calendrierv6.html">
+            <span class="icon is-small"><i class="fa-solid fa-address-book"></i></span>
+            <span>Contact</span>
+          </a>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item" href="./calendrierv3.html">
+            <span class="icon is-small"><i class="fas fa-calendar-alt"></i></span>
+            <span>Disponibilités</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="calendar">
+      <h2>
+        <center>Fullcalendar</center>
+      </h2>
+      <div class="container">
+        <div id="calendar"></div>
+      </div>
+      <br />
+    </div>
+
+    <script src="./js/scriptCalendar.js"></script>
+</body>
+
+</html>

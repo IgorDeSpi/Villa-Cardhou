@@ -125,6 +125,7 @@ main {
 /************************** FOOTER **************************/
 footer {
 	margin-top: auto;
+	height: 10vh;
 }
 
 /* body {
@@ -150,3 +151,9 @@ footer {
 	display: flex;
 	flex-direction: column;
 } */
+
+.calendar {
+	height: fit-content;
+	width: 80%;
+	margin: auto;
+}
